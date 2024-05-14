@@ -1,0 +1,64 @@
+/* TIPOGRAFIAS */
+/* font-family: "DM Serif Display", serif; */
+/* font-family: "DM Sans", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
+/* RESETEO DE ESTILO BY DEFAULT */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+.navbar-expand-lg {
+  display: flex;
+  flex-basis: auto;
+  /* flex-wrap: wrap; */
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.collapse navbar-collapse {
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+/* Card styles */
+.card {
+  width: auto;
+  border: 5px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.card h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.card p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.whatsapp {
+  position: fixed;
+  top: 90%;
+  right: 100px;
+}
+
+.whatsapp button {
+  background-color: #2db1da;
+  color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+}/*# sourceMappingURL=main.css.map */
