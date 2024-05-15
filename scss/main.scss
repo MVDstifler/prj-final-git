@@ -25,21 +25,30 @@
 }
 
 /* Card styles */
+.cards {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 100%;
+
+}
 .card {
-    width: auto;
+    
+    width: 70%;
     border: 5px solid #ccc;
     border-radius: 8px;
     padding: 16px;
     margin: 20px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     text-align: center;
+    align-content: center;
+    align-items: center;
 }
 
 .card img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 70%;
 }
 
 .card h2 {
@@ -64,3 +73,56 @@
     padding: 15px;
     border-radius: 15px;
 }
+
+/* contact form */
+.container {
+    max-width: 600px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type=text],
+  .form-group input[type=email],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form-group textarea {
+    height: 120px;
+  }
+  
+  .form-group input[type=submit] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-group input[type=submit]:hover {
+    background-color: #0056b3;
+  }
