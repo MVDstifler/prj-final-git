@@ -25,6 +25,8 @@
 }
 
 /* Card styles */
+
+
 .cards {
     display: flex;
     gap: 0.5rem;
@@ -33,16 +35,17 @@
 }
 .card {
     
-    width: 70%;
+    width: 50%;
     border: 5px solid #ccc;
     border-radius: 8px;
     padding: 16px;
-    margin: 20px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     text-align: center;
     align-content: center;
     align-items: center;
+    float: left;
 }
+
 
 .card img {
     display: block;
@@ -125,4 +128,12 @@
   
   .form-group input[type=submit]:hover {
     background-color: #0056b3;
+  }
+
+  @media screen and (width <= 768px) {
+    /* ... */
+    .card {
+          width: 100%;
+  
+  }
   }
