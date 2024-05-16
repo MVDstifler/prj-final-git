@@ -124,6 +124,30 @@
   background-color: #0056b3;
 }
 
+.carousel-item active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 80%;
+  height: 50%;
+  height: 400px;
+  padding: auto;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 500px;
+  padding: auto;
+}
+
+.carousel-inner > .item {
+  height: 400px;
+  padding: auto;
+}
+
 @media screen and (width <= 768px) {
   /* ... */
   .card {
