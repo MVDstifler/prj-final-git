@@ -1,8 +1,8 @@
 /* TIPOGRAFIAS */
 /* font-family: "DM Serif Display", serif; */
 /* font-family: "DM Sans", sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
 /* RESETEO DE ESTILO BY DEFAULT */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +11,18 @@
 
 .navbar-expand-lg {
   display: flex;
-  flex-basis: auto;
-  /* flex-wrap: wrap; */
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: space-evenly;
 }
 
 .collapse navbar-collapse {
   align-content: center;
+  justify-content: space-evenly;
+}
+
+.navbar-expand-lg .navbar-collapse {
   justify-content: space-evenly;
 }
 
@@ -123,27 +127,6 @@ form {
   flex-wrap: wrap;
 }
 
-label,
-input,
-textarea {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-label {
-  flex-basis: 100%;
-}
-
-input,
-textarea {
-  flex-basis: calc(50% - 10px);
-}
-
-input + input,
-textarea {
-  margin-left: 20px;
-}
-
 .carousel-item active {
   position: fixed;
   top: 0;
@@ -201,6 +184,10 @@ textarea {
 }
 
 footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: auto;
   background-color: #333;
   color: white;
   padding: 20px 0;
