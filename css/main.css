@@ -132,20 +132,22 @@
   height: 50%;
   height: 400px;
   padding: auto;
+  width: 70vw;
 }
 
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 500px;
-  padding: auto;
+.carousel > .carousel-inner > .carousel-item > img {
+  width: 250px; /* Yeap you can change the width and height*/
+  height: 480px;
 }
 
 .carousel-inner > .item {
   height: 400px;
   padding: auto;
+  width: 250px;
+}
+
+.w-100 {
+  width: 54% !important;
 }
 
 @media screen and (width <= 768px) {
