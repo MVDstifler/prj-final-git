@@ -123,7 +123,9 @@ form {
   flex-wrap: wrap;
 }
 
-label, input, textarea {
+label,
+input,
+textarea {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -132,11 +134,13 @@ label {
   flex-basis: 100%;
 }
 
-input, textarea {
+input,
+textarea {
   flex-basis: calc(50% - 10px);
 }
 
-input + input, textarea {
+input + input,
+textarea {
   margin-left: 20px;
 }
 
@@ -152,7 +156,8 @@ input + input, textarea {
 }
 
 .carousel > .carousel-inner > .carousel-item > img {
-  width: 250px; /* Yeap you can change the width and height*/
+  width: 250px;
+  /* Yeap you can change the width and height*/
   height: 480px;
 }
 
@@ -262,33 +267,66 @@ footer {
 iframe {
   max-width: 100%;
   height: auto;
-  /* Responsive styles */
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.thumbnail {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 10px;
+}
+
+/* Responsive styles */
+/* Media query for laptop-sized screens */
+@media only screen and (min-width: 768px) {
+  .product {
+    display: inline-block;
+    margin-right: 20px;
+  }
 }
 @media screen and (width <= 768px) {
-  iframe {
-    /* ... */
-  }
-  iframe .card {
+  .card {
     width: 100%;
   }
 }
 @media (min-width: 576px) {
-  iframe .container {
+  .container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  iframe .container {
+  .container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  iframe .container {
+  .container {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  iframe .container {
+  .container {
     max-width: 1140px;
   }
 }/*# sourceMappingURL=main.css.map */
