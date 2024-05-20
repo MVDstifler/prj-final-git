@@ -80,9 +80,9 @@
 
 /* contact form */
 .container {
-    max-width: 600px;
-    margin: 10px;
-    padding: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -97,11 +97,7 @@
     margin-bottom: 20px;
   }
   
-  .form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
+
   
   .form-group input[type=text],
   .form-group input[type=email],
@@ -130,6 +126,52 @@
   .form-group input[type=submit]:hover {
     background-color: #0056b3;
   }
+           /* Responsive styles */
+           @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+            
+      form {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      label, input, textarea {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      label {
+        flex-basis: 100%;
+      }
+
+      input, textarea {
+        flex-basis: calc(50% - 10px);
+      }
+
+      input + input, textarea {
+        margin-left: 20px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .container {
+        max-width: 1140px;
+      }
+    }
 
   .carousel-item active {
     position: fixed;
@@ -143,6 +185,7 @@
     
     ;
 }
+
 
 
 .carousel > .carousel-inner > .carousel-item > img{
