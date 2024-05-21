@@ -4,6 +4,7 @@
 @import './utilities/reseteo';
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
 @import './sections/boxes';
+@import './sections/class-main';
 
 
 
@@ -70,6 +71,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
+  
 }
 
 
@@ -83,7 +85,6 @@
 }
 
 .card {
-
   width: 50%;
   border: 5px solid #ccc;
   border-radius: 8px;
@@ -94,6 +95,7 @@
   align-items: center;
   float: left;
   gap: 1px;
+  
 }
 
 
@@ -219,8 +221,15 @@ form {
 }
 
 .team-section {
+  display: block;
   text-align: center;
   padding: 50px 0;
+}
+@media (min-width: 769px) {
+  .team-section {
+    display: grid; /* Change to inline-block for larger screens */
+    vertical-align: top; /* Ensure vertical alignment */
+  }
 }
 
 .team-section h2 {

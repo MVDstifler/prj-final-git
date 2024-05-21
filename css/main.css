@@ -9,6 +9,24 @@
   font-family: "DM Sans", sans-serif;
 }
 
+.main .cards .card {
+  background-color: rgb(230, 228, 228);
+}
+
+.main-faq {
+  text-align: center;
+  padding: 25px;
+}
+.main-faq .article-faq {
+  font-size: large;
+}
+.main-faq .article-faq .h2 {
+  font-size: xx-large;
+}
+.main-faq a {
+  font-family: cursive;
+}
+
 .navbar-expand-lg {
   display: flex;
   flex-direction: row-reverse;
@@ -202,10 +220,17 @@ form {
 }
 
 .team-section {
+  display: block;
   text-align: center;
   padding: 50px 0;
 }
 
+@media (min-width: 769px) {
+  .team-section {
+    display: grid; /* Change to inline-block for larger screens */
+    vertical-align: top; /* Ensure vertical alignment */
+  }
+}
 .team-section h2 {
   margin-bottom: 40px;
 }
