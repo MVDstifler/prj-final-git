@@ -27,10 +27,19 @@
 }
 
 /* Card styles */
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .cards {
   display: flex;
   gap: 0.5rem;
   max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
@@ -43,6 +52,7 @@
   align-content: center;
   align-items: center;
   float: left;
+  gap: 1px;
 }
 
 .card img {
@@ -297,6 +307,19 @@ iframe {
     width: 100%;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .card {
+    flex: 1 0 auto;
+    width: auto;
+    max-width: calc(33.333% - 20px);
+  }
+}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -315,5 +338,16 @@ iframe {
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
+  }
+}
+@media (max-width: 767px) {
+  .product {
+    /* Set display to block to make it a column */
+    display: block;
+    /* Center the card horizontally */
+    margin: 0 auto;
+    /* Optionally, add some padding or margin if needed */
+    padding: 20px;
+    align-items: center;
   }
 }/*# sourceMappingURL=main.css.map */
