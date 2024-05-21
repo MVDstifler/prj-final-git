@@ -26,6 +26,43 @@
   justify-content: space-evenly;
 }
 
+/* Custom styles for the navbar */
+.navbar-custom {
+  background-color: #343a40; /* Dark background */
+  border-bottom: 2px solid #007bff; /* Blue bottom border */
+}
+
+.navbar-custom .navbar-brand {
+  color: #ffffff; /* White brand text */
+  font-size: 1.5rem; /* Larger font size */
+  font-weight: bold;
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #0c0c0c; /* Blue brand text on hover */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #ffffff; /* White nav links */
+  padding: 0.75rem 1.25rem; /* Increased padding */
+  font-size: 1.1rem; /* Slightly larger font size */
+}
+
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .nav-link:focus {
+  color: #0c0c0c; /* Blue nav links on hover */
+}
+
+.navbar-custom .navbar-nav .active > .nav-link {
+  color: #050505; /* Blue nav link for active page */
+  font-weight: bold;
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1); /* Light border color for toggler */
+}
+
 /* Card styles */
 .catalog {
   display: flex;
