@@ -202,7 +202,18 @@ form {
   ;
 }
 
+.carousel-control-prev{
+    background-color: #cacaca;
+    border-radius: 22px;
+    width: 3%;
 
+}
+.carousel-control-next{
+    background-color: #cacaca;
+    border-radius: 22px;
+    width: 3%;
+
+}
 
 .carousel>.carousel-inner>.carousel-item>img {
   width: 250px;
@@ -223,7 +234,7 @@ form {
 .team-section {
   display: block;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 50px;
 }
 @media (min-width: 769px) {
   .team-section {
@@ -237,7 +248,7 @@ form {
 }
 
 .carousel-item {
-  display: flex;
+  // display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -336,8 +347,12 @@ iframe {
     margin: 10px;
     width: 200px;
     text-align: center;
+    
   }
 
+  @media screen {
+    
+  }
   .btn {
     background-color: #4CAF50;
     /* Green */
@@ -365,6 +380,7 @@ iframe {
     .product {
       display: inline-block;
       margin-right: 20px;
+      width: 20%;
     }
   }
 
